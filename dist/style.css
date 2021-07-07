@@ -1,0 +1,40 @@
+#search{
+    margin: 10px;
+    height: 30px;
+    width: 400px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr .3fr 1.4fr .3fr;
+    grid-template-areas: 
+    "city"
+    "condition"
+    "temperature"
+    "highlow";
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+    height: 300px; 
+    width: 1000px;
+    outline-style: solid;
+    font-family: sans-serif;
+}
+
+#city{
+    grid-area: city;
+    font-size: 50px;
+}
+#condition{
+    grid-area:condition;
+    font-size: 20px;
+
+}
+#temperature{
+    grid-area:temperature;
+    font-size: 100px;
+}
+#highlow{
+    grid-area:highlow;
+    font-size: 20px;
+}
